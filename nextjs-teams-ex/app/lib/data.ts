@@ -215,3 +215,15 @@ export async function fetchFilteredCustomers(query: string) {
     throw new Error('Failed to fetch customer table.');
   }
 }
+
+export async function fetchTeams() {
+  try {
+    const data = await sql`SELECT id, name FROM teams ORDER BY name ASC`;
+
+    const teams = data.rows;
+    return teams;
+  } catch (err) {
+    console.error('Database Error:', err);
+    throw new Error('Failed to fetch teams data.');
+  }
+}
