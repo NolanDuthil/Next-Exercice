@@ -1,3 +1,9 @@
+import Team from "../ui/Teams/teams";
+
 export default function Page() {
-    return <p>Teams</p>;
+    return (
+      <>
+      <Team></Team>
+      </>
+    )
   } 
