@@ -16,7 +16,7 @@ export default function Team(teams) {
   return (
     <section className="text-foreground m-auto max-w-6xl p-4 text-center">
       <header>
-        <h2>{teams.name}</h2>
+        <h2>Bonjour</h2>
         <h1 className="mt-3 text-4xl font-bold">{teams.heading}</h1>
       </header>
       <div>
